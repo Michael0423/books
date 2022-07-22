@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight, faAnglesLeft, faAnglesRight } from '@for
 
 export function Pagination({ totalCount, pageCount, onChange }) {
     const [page, setPage] = useState(1);
-    const [totalPage, setTotalPage] = useState(Math.ceil(totalCount/pageCount));
+    let totalPage = Math.ceil(totalCount/pageCount);
     let p = [];
     if(totalPage < 5){
         for (let i = 0; i < totalPage; i++) {
@@ -25,7 +25,7 @@ export function Pagination({ totalCount, pageCount, onChange }) {
     useEffect(()=> {
         updatePageArr();
         onChange(page)
-    }, [page]);
+    }, [page, pageCount]);
     
     const prevPage = () => {
         if(page === 1) return;
