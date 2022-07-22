@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+}
+
+.route-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.route-nav div {
+  margin: 0 5px;
+}

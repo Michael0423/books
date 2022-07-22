@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .btn {
+    margin: 0 2px;
+}
+.pagination .btn.active {
+    color: yellow;
+}
+
+.pagination .btn:hover {
+    cursor: pointer;
+    color: rgb(83, 139, 250);
+}
